@@ -18,7 +18,7 @@ public class TextContainer {
 
     @Save
     public  void saveToFile(String path) throws IOException {
-        PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(path)));
+        PrintWriter out = new PrintWriter(path);
         out.println(this.getStr());
         out.close();
     }
